@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-canvas {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.slice-container {
+  overflow: hidden;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  box-sizing: border-box;
+}
+
+.img-slice {
+  width: 100%;
+  height: 100%;
+}
