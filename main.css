@@ -13,7 +13,7 @@ body {
 }
 
 .img-canvas {
-  width: 75%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -24,8 +24,9 @@ body {
   overflow: hidden;
   border-color: white;
   border-style: solid;
-  border-width: thin;
+  border-width: 1px;
   box-sizing: border-box;
+  /*border-radius: 25px;*/
 }
 
 .img-slice {

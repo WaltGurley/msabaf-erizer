@@ -49,14 +49,25 @@ function loadImg(imageFile) {
         "filter": "brightness(" + (Math.random() * (1 - 0.95) + 0.95) + ")"
       });
 
+      var imgCanvas = $(".img-canvas");
       var sliceContainer = $("<div></div>").addClass("slice-container");
       sliceContainer.css({
         "width": (1 / horSlices) * 100 + "%",
-        "height": (1 / horSlices) * 75 + "vw"
+        "height": (1 / horSlices) * 90 + "vw"
       });
       sliceContainer.append(imgSlice);
       $(".img-canvas").append(sliceContainer);
     });
+
+    // Animate the slices
+    // window.setInterval(function () {
+    //   $(".img-slice").each(function(d) {
+    //     $(this).css({
+    //       "transform":
+    //         "scale("+ (Math.random() * (2 - 1) + 1) + ")"
+    //     });
+    //   });
+    // }, 250);
 
     img = null;
   });
